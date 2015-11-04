@@ -1,6 +1,4 @@
-
-
-feature 'adding a bookmark' do
+ feature 'adding a bookmark' do
   scenario 'when I want to add a link' do
     visit ('/links/new')
     fill_in('title', :with => 'Google' )
