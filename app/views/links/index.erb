@@ -9,7 +9,8 @@
   <%@links.each do |link|%></h1>
   <li>
     Title: <%= link.title%>
-    URL: <%= link.url%>  
+    URL: <%= link.url%>
+    Tag: <%= link.tags.map(&:name)%>
   </li>
     <% end %>
 </body>
