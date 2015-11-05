@@ -6,6 +6,6 @@ feature 'tagging a bookmark' do
   fill_in('tag', :with => 'search engine')
   click_button('Submit')
     link = Link.first
-    expect(link.tags.map(&:name)).to include('search engine')
+    expect(link.tags.map(&:name).join(" ")).to include('search engine')
   end
 end

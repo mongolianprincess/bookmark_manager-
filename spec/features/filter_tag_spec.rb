@@ -7,7 +7,7 @@ feature 'filter bookmark' do
   visit ('/links/new')
   fill_in('title', :with => 'Google' )
   fill_in('url', :with => 'www.google.com' )
-  fill_in('tag', :with => 'search engine')
+  fill_in('tag', :with => 'search-engine')
   click_button('Submit')
 
   visit ('/links/new')
@@ -18,7 +18,7 @@ feature 'filter bookmark' do
 
   visit ('/tags/radioactive')
   expect(page).to have_content('radioactive')
-  expect(page).to_not have_content ('search engine')
+  expect(page).to_not have_content ('search-engine')
 
   end
 end
