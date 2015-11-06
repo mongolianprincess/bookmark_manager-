@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Links</title>
-</head>
 <body>
-<h1> "Welcome #{user.name}" </h1>
+
 <ul id="links">
-  <%@links.each do |link|%></h1>
+  <% @links.each do |link|%></h1>
   <li>
     Title: <%= link.title%>
     URL: <%= link.url%>
@@ -15,4 +9,3 @@
   </li>
     <% end %>
 </body>
-</html>

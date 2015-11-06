@@ -1,6 +1,11 @@
-<h1>Sign up with your name and email</h1>
-<form action='/user' method ='post'>
-<input type='text' name='user'></input>
-<input type='text' name='email'></input>
-<input type='submit' value='Sign up'></input>
+<h1>Please sign up</h1>
+
+<form action='/users' method='post'>
+  <label for='email'>
+    Email: <input name='email' type='text'>
+  </label>
+  <label for='password'>
+    Password: <input name='password' type='password'>
+  </label>
+  <input type='submit' value='Sign up'>
 </form>

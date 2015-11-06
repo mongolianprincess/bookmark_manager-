@@ -9,6 +9,8 @@ require 'capybara/rspec'
 require 'rspec'
 require './app/app'
 require 'database_cleaner'
+require 'web_helper'
+
 
 RSpec.configure do |config|
   RSpec.configure do |config|
